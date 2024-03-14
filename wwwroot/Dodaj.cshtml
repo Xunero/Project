@@ -1,0 +1,25 @@
+@model FilmLibraryApp.Models.Film
+
+<form asp-action="Dodaj">
+    <div class="form-group">
+        <label for="tytul">Tytuł:</label>
+        <input asp-for="Tytul" class="form-control" />
+        <span asp-validation-for="Tytul" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label for="tworca">Twórca:</label>
+        <input asp-for="Tworca" class="form-control" />
+        <span asp-validation-for="Tworca" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label for="dlugosc">Długość:</label>
+        <input asp-for="Dlugosc" class="form-control" />
+        <span asp-validation-for="Dlugosc" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label for="opis">Opis:</label>
+        <textarea asp-for="Opis" class="form-control"></textarea>
+        <span asp-validation-for="Opis" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Dodaj</button>
+</form>

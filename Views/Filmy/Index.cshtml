@@ -1,0 +1,23 @@
+@model IEnumerable<FilmLibraryApp.Models.Film>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Tytuł</th>
+            <th>Twórca</th>
+            <th>Długość (min)</th>
+            <th>Opis</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var film in Model)
+        {
+            <tr>
+                <td>@film.Tytul</td>
+                <td>@film.Tworca</td>
+                <td>@film.Dlugosc</td>
+                <td>@film.Opis</td>
+            </tr>
+        }
+    </tbody>
+</table>

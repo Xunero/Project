@@ -1,0 +1,12 @@
+@model FilmLibraryApp.Models.Film
+
+<h2>Szczegóły filmu</h2>
+
+<div>
+    <h4>Tytuł: @Model.Tytul</h4>
+    <h4>Twórca: @Model.Tworca</h4>
+    <h4>Długość: @Model.Dlugosc minut</h4>
+    <h4>Opis: @Model.Opis</h4>
+</div>
+
+<a asp-action="Index" class="btn btn-secondary">Powrót</a>
